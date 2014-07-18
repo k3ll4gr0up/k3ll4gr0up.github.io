@@ -22,6 +22,7 @@ $(document).ready(function() {
 	// Menu
 			
 	$('#homea').click(function(){
+					_386 = { onePass: true, speedFactor: 1.25 };
 					$(".home").show();
 					$(".about").hide();
 					$(".projects").hide();
@@ -32,6 +33,7 @@ $(document).ready(function() {
 					$("#contactli").attr('class', 'inactive');
 	});
 	$('#abouta').click(function(){
+					_386 = { onePass: true, speedFactor: 1.25 };
 					$(".home").hide();
 					$(".about").show();
 					$(".projects").hide();
@@ -42,6 +44,7 @@ $(document).ready(function() {
 					$("#contactli").attr('class', 'inactive');
 	});
 	$('#projectsa').click(function(){
+					_386 = { onePass: true, speedFactor: 1.25 };
 					$(".home").hide();
 					$(".about").hide();
 					$(".projects").show();
@@ -52,6 +55,7 @@ $(document).ready(function() {
 					$("#contactli").attr('class', 'inactive');
 	});
 	$('#contacta').click(function(){
+					_386 = { onePass: true, speedFactor: 1.25 };
 					$(".home").hide();
 					$(".about").hide();
 					$(".projects").hide();
