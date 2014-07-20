@@ -98,9 +98,10 @@
     <script>
 	$( "form" ).submit(function( event ) {
 	  if ( $( "#check" ).val() === "15" ) {
-	    var message = $( "#message" ).val();
+	    var mesg = $( "#message" ).val();
+	    var res = encodeURIComponent(mesg);
 	    $( ".success" ).text( "Alright." ).show();
-	    $('form').get(0).setAttribute('action', 'mailto:k3ll4gr0up@gmail.com?subject=I would like to contact you&body=' + message);
+	    $('form').get(0).setAttribute('action', 'mailto:k3ll4gr0up@gmail.com?subject=I%20would%20like%20to%20contact%20you&body=' + res);
 	    return;
 	  }
 	  else {
