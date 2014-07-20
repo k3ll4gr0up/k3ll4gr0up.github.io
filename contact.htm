@@ -15,6 +15,12 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      .failure {
+    color: red;
+  }
+     .success {
+     	color: green;
+     }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -103,18 +109,18 @@
     <script src="js/menu.js"></script>
 
     <script>
-$( "form" ).submit(function( event ) {
-  if ( $( "input#check" ).val() === "15" ) {
-    $( "span.success" ).text( "Alright." ).show();
-    
-    return;
-  }
-  else {
-  $( "span.failure" ).text( "Not valid!" ).show().fadeOut( 1000 );
-  event.preventDefault();
-  }
-});
-</script>
+	$( "form" ).submit(function( event ) {
+	  if ( $( "#check" ).val() === "15" ) {
+	    $( ".success" ).text( "Alright." ).show();
+	    
+	    return;
+	  }
+	  else {
+	  $( ".failure" ).text( "Not valid!" ).show().fadeOut( 1000 );
+	  event.preventDefault();
+	  }
+	});
+    </script>
 
   </body>
 </html>
