@@ -54,17 +54,31 @@
 <div class="page-header">
       <h1>- contact -</h1>
       </div>
-      <form action="submit.php" method="post">
+      <form action="submit.php" method="post" class="form-horizontal">
   <fieldset>
     <legend>Tell me your thoughts</legend>
-    <label>Mail Adress</label>
+    <div class="control-group">
+    <label class="control-label">Mail Adress</label>
+    <div class="controls">
     <input type="text" name="mail" placeholder="Tell me your mail adress…">
-    <label>Name</label>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label">Name</label>
+    <div class="controls">
     <input type="text" name="user" placeholder="Tell me your name…">
-    <label>Your message to me</label>
-    <textarea name="message" cols="50" rows="10"></textarea>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label">Your message to me</label>
+    <div class="controls">
+    <textarea name="message" rows="10"></textarea>
+    </div>
+    </div>
+    <div class="control-group">
     <span class="help-block">I won't ever share your mail adress with somebody else. Alternatively you can tweet to <a href="http://twitter.com/kellagroup">@kellagroup</a> to contact me.</span>
     <button type="submit" class="btn">Submit</button>
+    </div>
   </fieldset>
 </form>
       
