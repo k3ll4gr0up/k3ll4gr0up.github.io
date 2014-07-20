@@ -100,8 +100,6 @@
 	  if ( $( "#check" ).val() === "15" ) {
 	    var mesg = $( "#message" ).val();
 	    var subj = "I would like to contact you.";
-	    var mesgenc = encodeURIComponent(mesg);
-	    var subjenc = encodeURIComponent(subj);
 	    $( ".success" ).text( "Alright." ).show();
 	    window.open('mailto:k3ll4gr0up@gmail.com?subject=' + subj + '&body=' + mesg);
 	    return;
