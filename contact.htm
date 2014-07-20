@@ -76,6 +76,15 @@
     </div>
     </div>
     <div class="control-group">
+    	<label class="control-label">5 x 3 =</label>
+    	<div class="controls">
+    		<input type="text" id="check">
+    		</div>
+    		<span class="failure"></span>
+    		<span class="success"></span>
+    	
+    </div>
+    <div class="control-group">
     <div class="controls">
     <button type="submit" class="btn">Submit</button>
     </div>
@@ -88,6 +97,19 @@
 
     <!-- Le javascript
     ================================================== -->
+    <script>
+$( "form" ).submit(function( event ) {
+  if ( $( "input#check" ).val() === "15" ) {
+    $( "span.success" ).text( "Alright." ).show();
+    
+    return;
+  }
+  else {
+  $( "span.failure" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+  }
+});
+</script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
