@@ -79,16 +79,11 @@
     <label class="control-label"><span class="failure"></span>
     		<span class="success"></span></label>
     <div class="controls">
-    <form>
     <button type="submit" class="btn">Submit</button>
     </div>
     </div>
-    <input type="hidden" name="subject" value="I would like to contact you">
-    <input type="hidden" id="mailcontent" name="body" value="">
     <span class="help-block">I won't ever share your mail adress with somebody else. Alternatively you can tweet to <a href="http://twitter.com/kellagroup">@kellagroup</a> to contact me.</span>
   </fieldset>
-
-	</form>
 </div>
       
     </div> <!-- /container -->
@@ -101,13 +96,14 @@
     <script src="js/menu.js"></script>
 
     <script>
-	$( "form" ).submit(function( event ) {
+	$( ".btn" ).click(function( event ) {
 	  if ( $( "#check" ).val() === "15" ) {
 	    var mesg = $( "#message" ).val();
-	    //var res = encodeURIComponent(mesg);
-	    $("#mailcontent").val(mesg);
+	    var subj = "I would like to contact you.";
+	    var mesgenc = encodeURIComponent(mesg);
+	    var subjenc = encodeURIComponent(subj);
 	    $( ".success" ).text( "Alright." ).show();
-	    $('form').get(0).setAttribute('action', 'mailto:k3ll4gr0up@gmail.com');
+	    window.open('mailto:k3ll4gr0up@gmail.com?subject=' + subj + '&body=' + mesg);
 	    return;
 	  }
 	  else {
