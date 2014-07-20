@@ -101,7 +101,8 @@
 	    var mesg = $( "#message" ).val();
 	    var subj = "I would like to contact you.";
 	    $( ".success" ).text( "Alright." ).show();
-	    window.open('mailto:k3ll4gr0up@gmail.com?subject=' + subj + '&body=' + mesg);
+	    var link = 'mailto:k3ll4gr0up@gmail.com?subject=' + subj + '&body=' + mesg;
+	    location.href = link;
 	    return;
 	  }
 	  else {
