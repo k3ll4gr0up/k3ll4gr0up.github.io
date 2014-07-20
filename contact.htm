@@ -60,7 +60,7 @@
 <div class="page-header">
       <h1>- contact -</h1>
       </div>
-      <form action="" class="form-horizontal">
+      <div class="form-horizontal">
   <fieldset>
     <legend>Tell me your thoughts</legend>
     <div class="control-group">
@@ -69,6 +69,7 @@
     <textarea name="message" id="message" rows="10"></textarea>
     </div>
     </div>
+    <form action="">
     <div class="control-group">
     	<label class="control-label">5 x 3 =</label>
     	<div class="controls">
@@ -82,9 +83,12 @@
     <button type="submit" class="btn">Submit</button>
     </div>
     </div>
+    <input type="hidden" name="subject" value="I%20would%20like%20to%20contact%20you">
+    <input type="hidden" id="mailcontent" name="body" value="">
     <span class="help-block">I won't ever share your mail adress with somebody else. Alternatively you can tweet to <a href="http://twitter.com/kellagroup">@kellagroup</a> to contact me.</span>
   </fieldset>
 </form>
+</div>
       
     </div> <!-- /container -->
 
@@ -100,8 +104,9 @@
 	  if ( $( "#check" ).val() === "15" ) {
 	    var mesg = $( "#message" ).val();
 	    var res = encodeURIComponent(mesg);
+	    $("#mailcontent").val(res);
 	    $( ".success" ).text( "Alright." ).show();
-	    $('form').get(0).setAttribute('action', 'mailto:k3ll4gr0up@gmail.com?subject=I%20would%20like%20to%20contact%20you&body=' + res);
+	    $('form').get(0).setAttribute('action', 'mailto:k3ll4gr0up@gmail.com);
 	    return;
 	  }
 	  else {
