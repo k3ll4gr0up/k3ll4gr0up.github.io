@@ -54,9 +54,20 @@
 <div class="page-header">
       <h1>- contact -</h1>
       </div>
-      <p>I'm too lazy to write a contact form.</p>
-      <p>If you want to contact me, tweet to <a href="http://twitter.com/kellagroup">@kellagroup</a> or search for my mail adress on my blog.</p>
-
+      <form action="submit.php" method="post">
+  <fieldset>
+    <legend>Tell me your thoughts</legend>
+    <label>Mail Adress</label>
+    <input type="text" name="mail" placeholder="Tell me your mail adress…">
+    <label>Name</label>
+    <input type="text" name="user" placeholder="Tell me your name…">
+    <label>Your message to me</label>
+    <textarea name="message" cols="50" rows="10"></textarea>
+    <span class="help-block">I won't ever share your mail adress with somebody else. Alternatively you can tweet to <a href="http://twitter.com/kellagroup">@kellagroup</a> to contact me.</span>
+    <button type="submit" class="btn">Submit</button>
+  </fieldset>
+</form>
+      
     </div> <!-- /container -->
 
     <!-- Le javascript
