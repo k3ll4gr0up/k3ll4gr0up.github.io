@@ -14,6 +14,7 @@ $(document).ready(function() {
 				$("#lpli").attr('class', 'inactive');
 				$("#vrli").attr('class', 'inactive');
 				$("#mpli").attr('class', 'inactive');
+				$("#pwli").attr('class', 'inactive');
 			});
 			$('#cfa').click(function(){
 				$("#llli").attr('class', 'inactive');
@@ -21,6 +22,7 @@ $(document).ready(function() {
 				$("#lpli").attr('class', 'inactive');
 				$("#vrli").attr('class', 'inactive');
 				$("#mpli").attr('class', 'inactive');
+				$("#pwli").attr('class', 'inactive');
 			});
 			$('#lpa').click(function(){
 				$("#llli").attr('class', 'inactive');
@@ -28,6 +30,7 @@ $(document).ready(function() {
 				$("#lpli").attr('class', 'active');
 				$("#vrli").attr('class', 'inactive');
 				$("#mpli").attr('class', 'inactive');
+				$("#pwli").attr('class', 'inactive');
 			});
 			$('#vra').click(function(){
 				$("#llli").attr('class', 'inactive');
@@ -35,6 +38,7 @@ $(document).ready(function() {
 				$("#lpli").attr('class', 'inactive');
 				$("#vrli").attr('class', 'active');
 				$("#mpli").attr('class', 'inactive');
+				$("#pwli").attr('class', 'inactive');
 			});
 			$('#mpa').click(function(){
 				$("#llli").attr('class', 'inactive');
@@ -42,6 +46,15 @@ $(document).ready(function() {
 				$("#lpli").attr('class', 'inactive');
 				$("#vrli").attr('class', 'inactive');
 				$("#mpli").attr('class', 'active');
+				$("#pwli").attr('class', 'inactive');
+			});
+			$('#pwa').click(function(){
+				$("#llli").attr('class', 'inactive');
+				$("#cfli").attr('class', 'inactive');
+				$("#lpli").attr('class', 'inactive');
+				$("#vrli").attr('class', 'inactive');
+				$("#mpli").attr('class', 'inactive');
+				$("#pwli").attr('class', 'active');
 			});
 
 });
