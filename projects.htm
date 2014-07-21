@@ -49,43 +49,81 @@
         </div>
       </div>
     </div>
-
+	<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li class="active" id="llli"><a href="#lunar-lander" id="lla"><i class="icon-chevron-right"></i> Lunar Lander</a></li>
+          <li id="cfli"><a href="#coffee" id="cfa"><i class="icon-chevron-right"></i> Coffee</a></li>
+          <li id="lpli"><a href="#lolpix" id="lpa"><i class="icon-chevron-right"></i> lolPix</a></li>
+          <li id="vrli"><a href="#vegan-recipes" id="vra"><i class="icon-chevron-right"></i> VeganRecipes</a></li>
+          <li id="mpli"><a href="#marcopolo" id="mpa"><i class="icon-chevron-right"></i> marcopolo</a></li>
+          <li id="pwli"><a href="#prism-warning" id="pwa"><i class="icon-chevron-right"></i> Prism Warning</a></li>
+        </ul>
+      </div>
+      <div class="span9">
     <div class="container projects">
-		<div class="lunar-lander">
+		<div class="lunar-lander" id="lunar-lander">
 		<div class="page-header">
 			<h1>- Lunar Lander -</h1>
 		</div>
 			<p class="lead"><a href="https://github.com/lfuelling/lunar-lander">Lunar Lander</a> is a space game written in C for my school.</p>
 			<p>The main goal of Lunar Lander is to land a spaceship on the moon. But wait. It's not graphical at all. in fact, it's a text based game, which prints out a table. In there you can get the current values of height, speed and fuel. You have to decide how much fuel you burn every ten seconds.</p>
-			<p>Lunar Lander was originally written by a stundent in 1967. It was one of the first ever computer games.</p>
+			<p>Lunar Lander was <a href="http://www.cs.brandeis.edu/~storer/LunarLander/LunarLander.html">originally written</a> by a stundent called <a href="http://www.cs.brandeis.edu/~storer/">Jim Storer</a> in 1969. It was one of the first ever computer games.</p>
+			<p>The original game was written in <a href="http://en.wikipedia.org/wiki/FOCAL_(programming_language)">FOCAL</a>, a interpreted programming language. FOCAL is an abbreviation of <strong>Fo</strong>rmula <strong>Cal</strong>culator.</p>
 		</div>
-		<div class="coffee">
+		<div class="coffee" id="coffee">
 		<div class="page-header">
 			<h1>- Coffee -</h1>
 		</div>
-			<p class="lead"><a href="https://github.com/rfc2324/coffee">Coffee</a> is a command line interface for the RFC2324.</p>
+			<p class="lead"><a href="https://github.com/rfc2324/coffee">Coffee</a> is a command line interface for the RFC2324 which is a communications protocol for controlling, monitoring and fiagnosing a coffee pot.</p>
 			<p>The main goal of this project is to create a working implementation of this protocol.</p>
 			<p>We plan to control a Senseo&reg; machine using a ATMEL microcontroller for acessing the temperature data and brew the selected coffee. There will be a CLI, an App and a web interface available when we're finished.</p>
-			<p>And I do this to awesome up my coffee machine.</p>
+			<p>The <a href="http://www.ietf.org/rfc/rfc2324.txt">RFC2324</a> is a facetious communications protocol for controlling, monitoring, and diagnosing coffee pots. It's called the <a href="http://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol">Hyper Text Coffee Pot Control Protocol</a>.</p>
+			<p>This project will definitely make your coffee machine more awesome than it is right now.</p>
 		</div>
-		<div class="lolpix">
+		<div class="lolpix" id="lolpix">
 		<div class="page-header">
 			<h1>- lolPix -</h1>
 		</div>
 			<p class="lead"><a href="https://github.com/lolPix/http_lolpix">lolPix</a> is an imageboard I'm woking on with two friends.</p>
 			<p>It's like 9Gag or Hugelol with our own features, in opensource and completely community controlled.</p>
 			<p>We will use Jquery for the complete interface.</p>
+			<p>There are plenty of features implemented right now. You can see the page at <a href="http://lolpix.org">http://lolpix.org</a>.</p>
 			<p>We are also making plans for an App and/or a mobile website.</p>
+		</div>
+		<div class="vegan-recipes" id="vegan-recipes">
+			<div class="page-header">
+				<h1>- Vegan Recipes -</h1>
+			</div>
+			<p class="lead"><a href="https://github.com/lfuelling/VeganRecipes">VeganRecipes</a> is a collection of my favorite vegan recipes.</p>
+			<p>There are a few raw vegan things too.</p>
+			<p>It's really worth a look.</p>
+		</div>
+		<div class="marcopolo" id="marcopolo">
+			<div class="page-header">
+				<h1>- marcopolo -</h1>
+			</div>
+			<p class="lead"><a href="https://github.com/lfuelling/marcopolo">marcopolo</a> is a simple client-server application written in C.</p>
+			<p>The original purpose of this application was that a client could broadcast "<strong>marco</strong>" into the network and every server replies with "<strong>polo</strong>". The client application would then print a list of every polo recieved.</p>
+			<p>Since I was unable to get this broadcast thing working, this is just a very simple <a href="http://en.wikipedia.org/wiki/Ping_(networking_utility)">ping</a>-like application.</p>
+		</div>
+		<div class="prism-warning" id="prism-warning">
+			<div class="page-header">
+				<h1>- Prism Warning -</h1>
+			</div>
+			<p class="lead"><a href="https://github.com/lfuelling/prism-warning">Prism Warning</a> is a WordPress plugin which shows a warning, when the client uses a browser made by a company which is part of the <a href="http://en.wikipedia.org/wiki/PRISM_(surveillance_program)">PRISM</a> program.</p>
+			<p>You can also check out the <a href="http://wordpress.org/plugins/prism-warning/">plugin page at WordPress.org</a>.</p>
 		</div>
 		
     </div> <!-- /container -->
-
+	</div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/projectsnav.js"></script>
 
   </body>
 </html>
