@@ -2,6 +2,8 @@
  * 	Menu.JS 
  * 
  * 	My way o handle the menu on this page.
+ *  This file is pretty much useless right now. 
+ * 	It only initializes the loading animation.
  * 
  * 	written by lfuelling <lukas@k40s.net>
  */
