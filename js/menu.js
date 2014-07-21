@@ -12,5 +12,18 @@ $(document).ready(function() {
 	
 	//initial load
 	_386 = { onePass: true, speedFactor: 1.25 };
+	
+	//Let's annoy the usery by not letting them right-click.
+			$(document)[0].oncontextmenu = function() { return false;}
+
+			$(document).mousedown(function(e){
+			if( e.button == 2 ) {
+            alert('Sorry, this functionality is disabled!'); //Yeah, we're REALLY sorry...
+            return false;
+			} else {
+            return true;
+            }
+
+			});
 
 });
